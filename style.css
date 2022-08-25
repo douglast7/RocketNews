@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+    'section aside'
+    'section aside'
+    'section aside';
+
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* SECTION */
+
+section {
+  grid-area: section;
+  background-color: #121214;
+}
+
+.bg {
+  margin: 209px 59px;
+}
+
+.logo {
+  width: 389px;
+  height: 94px;
+  object-fit: cover;
+}
+
+.text {
+  width: 647px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text h1 {
+  color: #08c05e;
+
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  flex-wrap: wrap;
+  margin-top: 92px;
+  margin-bottom: 0;
+}
+
+.text p {
+  color: #ffffff;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'League Spartan', sans-serif;
+}
+
+#weight {
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form {
+  margin: 50px 0;
+}
+
+label {
+  display: block;
+
+  color: #a8a8a8;
+
+  font-family: 'League Spartan', sans-serif;
+  font-size: 14px;
+  font-weight: 700px;
+}
+
+.input {
+  border: none;
+
+  margin: 17px 0;
+  padding: 0 20px;
+  width: 798px;
+  height: 48px;
+  background: #ffffff;
+  position: absolute;
+
+  box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.5);
+}
+
+.link {
+  margin-top: 100px;
+}
+
+.link a {
+  color: #8257e5;
+
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'League Spartan', sans-serif;
+
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 30px;
+  color: #ffffff;
+  background-color: #8257e5;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #542ab8;
+}
+
+/* ASIDE */
+
+aside {
+  grid-area: aside;
+}
+
+aside img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* MEDIA */
+
+@media (max-width: 800px) {
+  aside {
+    display: none;
+  }
+  body {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .input {
+    width: 500px;
+  }
+}
